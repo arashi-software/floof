@@ -239,6 +239,3 @@ proc search*(query: string, haystack: seq[string]): seq[SearchResult] =
       if result == 0:
         result = cmp(x.text, y.text)
   )
-
-when isMainModule:
-  
