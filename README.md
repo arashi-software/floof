@@ -16,7 +16,7 @@ let
   searchTerm = paramStr(1)
   
 echo "Searching for: ", searchTerm
-let results = search(searchTerm, dictionary) # Use foo's search function
+let results = search(searchTerm, dictionary) # Use floof's search function
 for res in results:
   echo res.text, " (score: ", res.score.formatFloat(ffDecimal, 3), ")"
 ```
