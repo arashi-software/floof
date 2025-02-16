@@ -1,11 +1,8 @@
 import std/[algorithm, sequtils, strutils, bitops, os, cpuinfo]
 import nimsimd/[sse2]
 
-var simd = false
-
 when (defined(gcc) or defined(clang)) and not defined(noSIMD):
   {.passC: "-msse2".}
-  simd = true
 
 type
   SearchResult* = object
